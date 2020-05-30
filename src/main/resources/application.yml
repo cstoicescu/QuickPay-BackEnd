@@ -1,0 +1,16 @@
+spring:
+  datasource:
+#    C:/Users/just_/Desktop/ING Tech/devschool-13/
+#    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:./src/main/resources/database
+    driverClassName: org.h2.Driver
+    username: sa
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+# To access H2 console http://localhost:8080/h2-console
+  h2:
+    console:
+      enabled: true
